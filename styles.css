@@ -1,0 +1,234 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: url(background.jpg);
+  object-fit: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  background-size: cover;
+  object-fit: cover;
+  opacity: 50%;
+  z-index: -2;
+
+}
+
+header nav {
+padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 3;
+} 
+
+
+header .navbar .navbar-brand {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 1;
+
+}
+
+header .navbar .navbar-nav a {
+  color: #fff;
+}
+
+
+nav.sticky  .navbar-brand,
+nav.sticky  .navbar-nav a {
+  color: #000;
+}
+
+
+
+nav.sticky {
+  background-color: #fff;
+}
+
+header .navbar .navbar-brand span {
+  color: crimson;
+} 
+
+
+
+
+header .judul {
+  margin: 100px auto;
+  z-index: 3;
+}
+
+header .judul h1 {
+  z-index: 3;
+  font-size: 5rem;
+}
+
+header .judul p{
+  font-size: 2rem;
+}
+
+
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Sesuaikan tinggi kontainer */
+  background-size: cover;
+  object-fit: cover;
+}
+
+.center-image {
+  width: 100%; /* Sesuaikan ukuran sesuai kebutuhan */
+
+}
+
+
+
+  /* Section Style */
+  .content section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+.content section::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: #000;
+  background-size: cover;
+  object-fit: cover;
+  opacity: 50%;
+
+}
+
+.content h1{
+  color: #fff;
+  font-size: 5rem;
+  z-index: 1;
+
+}
+
+.content p {
+  color: #fff;
+  z-index: 1;
+
+}
+
+ .content  #profil{
+  background: url(img/profile.jpg);
+  object-fit: cover;
+  background-size: cover;
+  margin-top: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.content #profil p {
+  color: #fff;
+  text-decoration: none;
+}
+
+#layanan{
+  background: url(img/layanan.jpg);
+  object-fit: cover;
+  background-size: cover;
+}
+
+#galeri{
+  background: url(img/galeri.jpg);
+  object-fit: cover;
+  background-size: cover;
+}
+
+#kontak{
+  background: url(img/kontak.jpg);
+  object-fit: cover;
+  background-size: cover;
+}
+
+.gallery {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 300px;
+  height: 300px;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #1a73e8;
+    display: inline-block;
+}
+
+section p {
+    line-height: 1.6;
+    font-size: 1em;
+    color: #666;
+}
+
+.content #kontak .contact-info ul {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.content #kontak .contact-info ul li {
+  color: #fff;
+  z-index: 3;
+}
+
+.content #kontak .gallery img{
+  width: 50px;
+  height: 50px;
+}
